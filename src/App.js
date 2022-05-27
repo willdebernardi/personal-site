@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import Header from './components/header/Header';
 import ReactFullpage from '@fullpage/react-fullpage';
+import About from './components/about/About';
 
 function App() {
   const [api, setApi] = useState("");
@@ -23,14 +24,13 @@ function App() {
       <ReactFullpage
         scrollingSpeed={1000}
         navigation
-        paddingTop='75px'
         render={({ state, fullpageApi }) => {
           setApi(fullpageApi)
           return (
             <>
               <ReactFullpage.Wrapper>
-                  <Center as='div' className='section' bg="tomato" color="white" w="100%">
-                    <Heading>Section 1</Heading>
+                  <Center as='div' className='section' color="white" w="100%">
+                    <About />
                   </Center>
                   <Center as='div' className='section' bg="purple" color="white" w="100%">
                     <Heading>Section 2</Heading>

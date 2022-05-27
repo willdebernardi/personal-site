@@ -22,7 +22,11 @@ const Header = (props) => {
       position="absolute"
       zIndex={999}
     >
-      <Heading>Will DeBernardi</Heading>
+      <HStack spacing="2">
+          <Heading fontWeight="light">Will</Heading>
+          <Heading>DeBernardi</Heading>
+      </HStack>
+    
       {/* <Spacer /> */}
       <HStack spacing="10">
         <Link onClick={() => props.api.moveTo(1)}>About</Link>
