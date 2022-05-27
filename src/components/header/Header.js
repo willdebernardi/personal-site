@@ -23,15 +23,15 @@ const Header = (props) => {
       zIndex={999}
     >
       <HStack spacing="2">
-          <Heading fontWeight="light">Will</Heading>
-          <Heading>DeBernardi</Heading>
+          <Heading color="#E0E2DB" fontWeight="light">Will</Heading>
+          <Heading color="#E6AF2E">DeBernardi</Heading>
       </HStack>
     
       {/* <Spacer /> */}
       <HStack spacing="10">
-        <Link onClick={() => props.api.moveTo(1)}>About</Link>
-        <Link onClick={() => props.api.moveTo(2)}>Work</Link>
-        <Link onClick={() => props.api.moveTo(3)}>Contact</Link>
+        <Link color="#E0E2DB" onClick={() => props.api.moveTo(1)}><Heading color="#E6AF2E" size="xs">0.1</Heading>About</Link>
+        <Link color="#E0E2DB" onClick={() => props.api.moveTo(2)}><Heading color="#E6AF2E" size="xs">0.2</Heading>Work</Link>
+        <Link color="#E0E2DB" onClick={() => props.api.moveTo(3)}><Heading color="#E6AF2E" size="xs">0.3</Heading>Contact</Link>
         <Link href="https://github.com/willdebernardi" target="_blank">
           <Icon as={VscGithub} display="block" h="24px" w="24px"></Icon>
         </Link>

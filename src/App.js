@@ -10,6 +10,7 @@ import {
   theme,
   Center,
   Heading,
+  extendTheme,
 } from '@chakra-ui/react';
 import Header from './components/header/Header';
 import ReactFullpage from '@fullpage/react-fullpage';
@@ -17,6 +18,14 @@ import About from './components/about/About';
 
 function App() {
   const [api, setApi] = useState("");
+
+  const theme = extendTheme({
+    colors: {
+      brand: {
+        100: "#EGAF2E"
+      }
+    }
+  })
 
   return (
     <ChakraProvider theme={theme}>
