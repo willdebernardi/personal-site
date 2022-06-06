@@ -15,6 +15,7 @@ import {
 import Header from './components/header/Header';
 import ReactFullpage from '@fullpage/react-fullpage';
 import About from './components/about/About';
+import Contact from './components/contact/Contact';
 
 function App() {
   const [api, setApi] = useState("");
@@ -41,11 +42,11 @@ function App() {
                   <Center as='div' className='section' color="white" w="100%">
                     <About />
                   </Center>
-                  <Center as='div' className='section' bg="purple" color="white" w="100%">
+                  <Center as='div' className='section' color="white" w="100%">
                     <Heading>Section 2</Heading>
                   </Center>
-                  <Center as='div' className='section' bg="blue" color="white" w="100%">
-                    <Heading>Section 3</Heading>
+                  <Center as='div' className='section' color="white" w="100%">
+                    <Contact />
                   </Center>
               </ReactFullpage.Wrapper>
             </>

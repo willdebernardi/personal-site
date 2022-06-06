@@ -21,10 +21,10 @@ const About = () => {
         <Heading mt={-3} mb={2} fontWeight="light" fontSize="6xl" color="#E0E2DB">
           I develop things.
         </Heading>
-        <Text fontsize="4xl" color="#E0E2DB" maxWidth="40vw">
+        <Text color="#E0E2DB" maxWidth="40vw">
           I am a 21 year-old computer science student and aspiring software
           engineer, graduating from the University of New Mexico in December
-          2022. Currently based in Albuquerque, New Meixco, but I am extremely
+          2022. Currently based in Albuquerque, New Mexico, but I am extremely
           eager to get out and see the wider world. Outside of programming, I
           love learning languages (currently studying German and Japanese),
           skiing, rock climbing, and video games.
@@ -52,8 +52,8 @@ const About = () => {
         <Progress value={75} w={350} h={5} colorScheme="whiteAlpha" />
         <Text pt={4} color="#E0E2DB">Python: 70%</Text>
         <Progress value={70} w={350} h={5} colorScheme="whiteAlpha" />
-        <Text pt={4} color="#E0E2DB">NodeJS: 65%</Text>
-        <Progress value={65} w={350} h={5} colorScheme="whiteAlpha" />
+        <Text pt={4} color="#E0E2DB">NodeJS: 55%</Text>
+        <Progress value={55} w={350} h={5} colorScheme="whiteAlpha" />
         <Text pt={4} color="#E0E2DB">C: 50%</Text>
         <Progress value={50} w={350} h={5} colorScheme="whiteAlpha" />
       </Flex>
